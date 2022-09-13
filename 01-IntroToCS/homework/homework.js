@@ -27,6 +27,7 @@ function DecimalABinario(num){
       guardanum=num;
       num=cuociente;
       
+      
   } while (guardanum >= 2)
   //return Number(arraybin.join("")); ...devuelve numero y NO PASA TEST...
   return arraybin.join("");
