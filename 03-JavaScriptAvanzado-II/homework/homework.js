@@ -3,6 +3,11 @@
 // Closures
 
 function counter() {
+  let contador=0;
+  return function incrementaCounter(){
+    contador++;
+    return contador;
+  }
   /*
   Ejercicio 1
 
