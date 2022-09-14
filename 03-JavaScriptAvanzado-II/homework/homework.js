@@ -27,6 +27,17 @@ function counter() {
 }
 
 function cacheFunction(cb) {
+
+  var cache = {}
+ return function (propiedad) {
+  if(cache.hasOwnProperty(propiedad)){
+    return cache[propiedad]
+  }
+  else {
+    cache[propiedad] = cb(propiedad)
+    return cache[propiedad]
+  }
+ }
   /*
   Ejercicio 2
 
