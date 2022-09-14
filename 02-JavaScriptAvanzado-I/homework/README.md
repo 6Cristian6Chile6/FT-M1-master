@@ -13,25 +13,25 @@ var a = 5;
 var b = 10;
 var c = function(a, b, c) {
   var x = 10;
-  console.log(x);
-  console.log(a);
+  console.log(x);  //muestra 10
+  console.log(a);  // muestra 8
   var f = function(a, b, c) {
-    b = a;
-    console.log(b);
-    b = c;
+    b = a;// a 'b' se le asigna 'a' o sea 8
+    console.log(b);//muestra 8 
+    b = c; // b se le asigna c, o sea vale 10 (a nivel local)
     var x = 5;
   }
   f(a,b,c);
-  console.log(b);
+  console.log(b);// muestra 9
 }
 c(8,9,10);
-console.log(b);
-console.log(x);
+console.log(b);// muestra 10 (global)
+console.log(x);// muestra 1 (global)
 ```
 
 ```javascript
-console.log(bar);
-console.log(baz);
+console.log(bar); // undefined
+console.log(baz); // no definida
 foo();
 function foo() { console.log('Hola!'); }
 var bar = 1;
@@ -43,7 +43,7 @@ var instructor = "Tony";
 if(true) {
     var instructor = "Franco";
 }
-console.log(instructor);
+console.log(instructor); // "Franco" los string son true.
 ```
 
 ```javascript
@@ -75,21 +75,22 @@ console.log(pm);
 ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
 ```javascript
-6 / "3"
-"2" * "3"
-4 + 5 + "px"
-"$" + 4 + 5
-"4" - 2
-"4px" - 2
-7 / 0
-{}[0]
-parseInt("09")
-5 && 2
-2 && 5
-5 || 0
-0 || 5
-[3]+[3]-[10]
-3>2>1
+6 / "3" //2
+"2" * "3" //6
+4 + 5 + "px" //'9px'
+"$" + 4 + 5//'$45'
+"4" - 2//2
+"4px" - 2 //NaN
+7 / 0 //undefined... era Infinity
+{}[0] // undefined
+parseInt("09") //9
+5 && 2//2
+2 && 5//5
+5 || 0//5
+0 || 5//5
+
+[3]+[3]-[10] //23 ???
+3>2>1 //false
 [] == ![]
 ```
 
@@ -103,9 +104,9 @@ parseInt("09")
 ```javascript
 function test() {
    console.log(a);
-   console.log(foo());
-
-   var a = 1;
+   console.log(foo());   // al ejecutar, sera
+                        // undefined
+   var a = 1;           // 2
    function foo() {
       return 2;
    }
