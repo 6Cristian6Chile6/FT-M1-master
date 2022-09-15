@@ -15,9 +15,15 @@ Como ejercicio adicional y completamente opcional, al terminar de resolver este 
 */
 
 function nFactorial(n) {
+  if (x > -1 && x < 2) return 1;
+  if (x < 0) return 0;
+ else return x*nFactorial(x-1);
 }
 
 function nFibonacci(n) {
+  if (n===0) return 0; //casos de corte
+    if (n===1) return 1;//caso de corte
+    else return nFibonacci(n-1)+fibonacci(n-2);
 }
 
 /*
