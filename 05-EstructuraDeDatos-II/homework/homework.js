@@ -38,7 +38,11 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   current.next = node; 
   return node; 
 };
-LinkedList.prototype.remove = function(value) {};
+LinkedList.prototype.remove = function() {
+  if (node==={}) return;
+  if (!this.netx) return; 
+
+};
 LinkedList.prototype.search = function(value) {};
 
 /*
