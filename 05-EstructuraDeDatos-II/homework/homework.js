@@ -13,6 +13,7 @@ Implementar la clase LinkedList, definiendo los siguientes métodos:
 
 function LinkedList() {
   this.head=null;
+  this._length=0;  
 }
 
 function Node(value) {
@@ -20,24 +21,22 @@ function Node(value) {
   this.next = null;
 }
 
-LinkedList.prototype.add = function(value) { 
-  let node = new Node(value); 
-  let actual = this.head; 
+LinkedList.prototype.add = function(value) { // metodo para agregar
+  var node = new Node(value); 
+  var current = this.head; 
  
-  if (!actual) { 
+  if (!current) { 
       this.head = node;
       return node; //
   }
   
-  while (actual.next) { 
-      actual = actual.next; // 
+  while (current.next) { 
+      current = current.next; // 
   }
 ​
-  actual.next = node; 
+  current.next = node; 
   return node; 
 };
-let nuevaLista = new LinkedList();
-nuevaLista.add();
 
 
 /*
