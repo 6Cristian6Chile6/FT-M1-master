@@ -21,6 +21,7 @@ function Node(value) {
   this.next = null;
 }
 
+var linkedList = new LinkedList ();
 LinkedList.prototype.add = function(value) { // metodo para agregar
   var node = new Node(value); 
   var current = this.head; 
@@ -37,7 +38,8 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   current.next = node; 
   return node; 
 };
-
+LinkedList.prototype.remove = function(value) {};
+LinkedList.prototype.search = function(value) {};
 
 /*
 Implementar la clase HashTable.
