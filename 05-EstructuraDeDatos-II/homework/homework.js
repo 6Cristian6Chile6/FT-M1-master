@@ -38,7 +38,7 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   current.next = node; 
   return node; 
 };
-LinkedList.prototype.remove = function() {
+LinkedList.prototype.remove = function(value) {
   if (node==={}) return;
   if (!this.netx) return; 
 
