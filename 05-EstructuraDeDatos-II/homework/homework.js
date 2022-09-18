@@ -41,7 +41,7 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   return node; 
 };
 var lista=new LinkedList;
-LinkedList.prototype.remove = function() {
+LinkedList.prototype.remove = function(lista) {
   if (lista.tamaño===1)return;
   if (lista.tamaño===0)return;//lista de un solo nodo
   //lista vacia
