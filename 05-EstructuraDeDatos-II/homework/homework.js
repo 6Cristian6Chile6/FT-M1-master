@@ -45,7 +45,10 @@ LinkedList.prototype.remove = function() {
   let current=this.head;
   if (this.tamaño===0)return null;// lista vacia
   if (this.tamaño===1)
-  {return;}
+  {let aux=current.value;
+    this.head=null;
+    this.tamaño--;
+    return aux;}
   }; 
 
 ;
