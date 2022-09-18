@@ -42,6 +42,7 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
 };
 var lista=new LinkedList;
 LinkedList.prototype.remove = function() {
+  let current=this.head;
   if (lista.tamaño===0)return null;// lista vacia
   if (lista.tamaño===1)
   {return;}
