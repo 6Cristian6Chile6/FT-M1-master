@@ -40,11 +40,10 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   current.next = node;
   return node; 
 };
-
-var lista = new LinkedList ();
-lista.add(value);
+var lista=new LinkedList;
 LinkedList.prototype.remove = function() {
-  //lista de un solo nodo
+  if (lista.tamaño===1)return;
+  if (lista.tamaño===0)return;//lista de un solo nodo
   //lista vacia
   }; 
 
