@@ -49,6 +49,14 @@ LinkedList.prototype.remove = function() {
     this.head=null;
     this.tamaño--;
     return aux;}
+    while (current.next.next){
+      current=current.next;
+    }
+    let aux=current.next.value;
+    current.next=null;
+    this.tamaño--;
+    return aux;
+
   }; 
 
 ;
