@@ -90,6 +90,7 @@ Ejemplo: supongamos que quiero guardar {instructora: 'Ani'} en la tabla. Primero
 
 function HashTable() {
   this.numBuckets=35;
+  this.Buckets=[];
   //`set`, `get`, y `hasKey`
   HashTable.prototype.set = function (){};
   HashTable.prototype.get = function (){};
