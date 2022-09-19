@@ -92,6 +92,14 @@ function HashTable() {
   this.numBuckets=35;
   this.Buckets=[];
   //`set`, `get`, y `hasKey`
+  HashTable.prototype.hash = function(key){
+    let sum=0;
+    for(let i=0; i<key.length;i++)
+    {sum += key.charCodeAt(i);
+    }
+    return sum%this.numBuckets;
+  };
+
   HashTable.prototype.set = function (){};
   HashTable.prototype.get = function (){};
   HashTable.prototype.hasKey = function (){};
