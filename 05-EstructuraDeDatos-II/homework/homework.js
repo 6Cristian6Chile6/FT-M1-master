@@ -66,7 +66,7 @@ LinkedList.prototype.search = function(value) {
   while(current){
     if (current.value===value){return current.value;}
     else if (typeof(value)==='function'){
-      if (value(current.value)===current.value){return true;}
+      if (value(current.value)){return current.value;}
     }
     current=current.next;
   }
