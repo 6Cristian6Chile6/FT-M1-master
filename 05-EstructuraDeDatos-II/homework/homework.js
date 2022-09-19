@@ -40,7 +40,7 @@ LinkedList.prototype.add = function(value) { // metodo para agregar
   current.next = node;
   return node; 
 };
-var lista=new LinkedList;
+
 LinkedList.prototype.remove = function() {
   let current=this.head;
   if (this.tamaño===0)return null;// lista vacia
@@ -60,7 +60,18 @@ LinkedList.prototype.remove = function() {
   }; 
 
 ;
-LinkedList.prototype.search = function(value) {};
+LinkedList.prototype.search = function(value) {
+  if (this.head===null) {return null;}
+  let current=this.head;
+  while(current){
+    if (current.value===value){return current.value;}
+    else if (typeof(value)==='function'){
+      if (value(current.value)===current.value){return current.value;}
+    }
+    current=current.next;
+  }
+return null;
+};
 
 /*
 Implementar la clase HashTable.
