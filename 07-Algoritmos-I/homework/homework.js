@@ -10,6 +10,17 @@ function factorear(num) {
 }
 
 function bubbleSort(array) {
+
+  for(let i=0;i<array.length;i++)
+      //let aux=0;
+      for (let j=0; j<array.length; j++){
+        if(array[i]<array[j]){
+          let aux=array[i];
+          array[i]=array[j];
+          array[j]=aux;
+        }
+  }
+return array;
   // Implementar el método conocido como bubbleSort para ordenar de menor a mayor
   // el array recibido como parámetro
   // Devolver el array ordenado resultante
