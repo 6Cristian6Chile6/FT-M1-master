@@ -12,8 +12,7 @@ function factorear(num) {
 function bubbleSort(array) {
 
   for(let i=0;i<array.length;i++)
-      //let aux=0;
-      for (let j=0; j<array.length; j++){
+        for (let j=0; j<array.length; j++){
         if(array[i]<array[j]){
           let aux=array[i];
           array[i]=array[j];
