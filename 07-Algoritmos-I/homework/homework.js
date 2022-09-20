@@ -32,17 +32,20 @@ function insertionSort(array) {
   
   for (let i=1; i<array.length ;i++){
     if (array[i]<array[i-1])
-  {let aux=array[i];
-       array[i]=array[i-1];
-       array[i-1]=aux;
-       let j=i;
-       }
-        }
+     {let aux=array[i];
+          array[i]=array[i-1];
+          console.log(array)
+          array[i-1]=aux;
+          let j=i;
+                    while(j>0){
+               j=0;
+             }}}
+   return array;
   // Implementar el método conocido como insertionSort para ordenar de menor a mayor
   // el array recibido como parámetro utilizando arreglos
   // Devolver el array ordenado resultante
   // Tu código:
-return array;
+
 }
 
 
