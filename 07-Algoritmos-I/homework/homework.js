@@ -36,9 +36,8 @@ function insertionSort(array) {
           array[i]=array[i-1];
           console.log(array)
           array[i-1]=aux;
-          let j=i;
-                    while(j>0){
-               j=0;
+                    while(i>0){
+               i--;
              }}}
    return array;
   // Implementar el método conocido como insertionSort para ordenar de menor a mayor
