@@ -22,7 +22,7 @@ return factors;
   // Ej: factorear(180) --> [1, 2, 2, 3, 3, 5] Ya que 1x2x2x3x3x5 = 180 y son todos números primos
   // Tu código:
 
-}
+
 
 function bubbleSort(array) {
 
