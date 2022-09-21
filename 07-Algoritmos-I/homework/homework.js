@@ -60,6 +60,22 @@ function insertionSort(array) {
 
 
 function selectionSort(array) {
+  for(let i = 0; i < array.length; i++) {
+    // encontrar el minimo en el arreglo
+    let min = i;
+    for(let j = i+1; j < array.length; j++){
+        if(array[j] < array[min]) {
+            min=j; 
+        }
+     }
+     if (min != i) {
+         // cambiando elementos
+         let temporal = array[i]; 
+         array[i] = array[min];
+         array[min] = temporal;      
+    }
+}
+return array;
   // Implementar el método conocido como selectionSort para ordenar de menor a mayor
   // el array recibido como parámetro utilizando dos arreglos
   // Devolver el array ordenado resultante
