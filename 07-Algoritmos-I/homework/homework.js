@@ -12,8 +12,9 @@ function factorear(num) {
       else {
         x++;
       }
-return factors;
+
     }
+    return factors;
   }
 
 
